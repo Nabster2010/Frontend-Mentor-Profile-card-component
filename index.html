@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Kumbh Sans", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkCyan: "hsl(185, 75%, 39%)",
+              veryDarkDesaturatedBlue: "hsl(229, 23%, 23%)",
+              darkGrayishBlue: "hsl(227, 10%, 46%)",
+              darkGray: "hsl(0, 0%, 59%)",
+            },
+            fontFamily: {
+              kumbhSans: ["Kumbh Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <div
+      class="w-full grid place-items-center h-screen bg-darkCyan relative overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="/images/bg-pattern-top.svg"
+        alt="bg-top"
+        class="absolute -top-80 -left-96 md:-top-[40rem] md:-left-[30rem]"
+      />
+      <img
+        src="/images/bg-pattern-top.svg"
+        alt="bg-top"
+        class="absolute -bottom-80 -right-96 md:-bottom-[40rem] md:-right-[30rem]"
+      />
+      <!-- card -->
+      <div class="w-md bg-white rounded-xl z-10">
+        <div class="w-fit">
+          <img
+            src="/images/bg-pattern-card.svg"
+            alt="card"
+            class="rounded-t-xl w-full object-cover"
+          />
+          <div class="w-full grid place-items-center">
+            <img
+              src="/images/image-victor.jpg"
+              alt=""
+              class="rounded-full border-[6px] border-white -mt-16 w-32"
+            />
+            <div
+              class="py-6 border-b border-darkGrayishBlue/20 w-full text-center"
+            >
+              <h1 class="font-bold text-xl pb-2 text-veryDarkDesaturatedBlue">
+                Victor Crest &nbsp;<span class="font-thin text-darkGray">
+                  26</span
+                >
+              </h1>
+              <p class="text-darkGray text-sm">London</p>
+            </div>
+            <div
+              class="flex justify-between items-center text-center w-full p-8"
+            >
+              <div>
+                <h1 class="font-bold text-xl pb-1 text-veryDarkDesaturatedBlue">
+                  80K
+                </h1>
+                <p class="text-darkGray text-sm">Followers</p>
+              </div>
+              <div>
+                <h1 class="font-bold text-xl pb-1 text-veryDarkDesaturatedBlue">
+                  803K
+                </h1>
+                <p class="text-darkGray text-sm">Likes</p>
+              </div>
+              <div>
+                <h1 class="font-bold text-xl pb-1 text-veryDarkDesaturatedBlue">
+                  1.4K
+                </h1>
+                <p class="text-darkGray text-sm">Photos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
